@@ -54,6 +54,14 @@
       line-height: 1.5;
     }
 
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 24px 0 12px;
+      color: #f3f4f6;
+      text-align: left;
+    }
+
     .links {
       display: flex;
       flex-direction: column;
@@ -64,23 +72,35 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 10px; /* spazio tra icona e testo */
       padding: 12px;
       text-decoration: none;
-      color: #e5e7eb;
-      border: 1px solid #374151;
-      border-radius: 10px;
       font-size: 14px;
+      border-radius: 10px;
+      transition: opacity 0.2s;
+      font-weight: 500;
     }
 
-    .link img {
-      width: 20px;
-      height: 20px;
-      filter: brightness(0) invert(1);
+    .link.google {
+      background-color: #34A853; /* verde Google */
+      color: white;
+      border: none;
+    }
+
+    .link.apple {
+      background-color: #007AFF; /* blu Apple */
+      color: white;
+      border: none;
     }
 
     .link:hover {
-      background: #111827;
+      opacity: 0.9;
+    }
+
+    .link img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
     }
   </style>
 </head>
@@ -94,23 +114,24 @@
 
     <h1>Fab3dMaker</h1>
     <p>
-      
+      Show my Apps.
     </p>
 
     <div class="links">
-      <a class="link" href="https://play.google.com/store/apps/details?id=com.fab3dmaker.mykeys">
-        <img src="assets/img/mykeys-android.png" alt="">
-        <span>My Keys on Google Play</span>
+      <h2>Google Play</h2>
+      <a class="link google" href="https://play.google.com/store/apps/details?id=com.fab3dmaker.mykeys">
+        <img src="assets/img/mykeys-android.png" alt="My Keys logo">
+        My Keys
       </a>
-      
-      <a class="link" href="https://play.google.com/store/apps/details?id=com.fab3dmaker.myfilaments">
-        <img src="assets/img/myfilaments-android.png" alt="">
-        <span>My Filaments on Google Play</span>
+      <a class="link google" href="https://play.google.com/store/apps/details?id=com.fab3dmaker.myfilaments">
+        <img src="assets/img/myfilaments-android.png" alt="My Filaments logo">
+        My Filaments
       </a>
 
-      <a class="link" href="https://apps.apple.com/it/app/my-filaments/id6758254736">
-        <img src="assets/img/myfilaments-appstore.png" alt="">
-        <span>My Filaments on App Store</span>
+      <h2>App Store</h2>
+      <a class="link apple" href="https://apps.apple.com/it/app/my-filaments/id6758254736">
+        <img src="assets/img/myfilaments-appstore.png" alt="My Filaments logo">
+        My Filaments
       </a>
     </div>
   </div>
