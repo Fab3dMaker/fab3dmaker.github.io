@@ -3,83 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Filaments – Le mie app</title>
+  <title>My Apps</title>
+
   <style>
     body {
       margin: 0;
       font-family: system-ui, -apple-system, sans-serif;
-      background: #0f172a;
+      background: #111827;
       color: #e5e7eb;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       min-height: 100vh;
-      padding: 20px;
-    }
-    .card {
-      background: #1e293b;
-      padding: 30px;
-      border-radius: 20px;
-      max-width: 420px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
-    .logo {
-      width: 90px;
-      height: 90px;
-      border-radius: 20px;
-      background: #e2e8f0;
-      color: #0f172a;
-      font-size: 36px;
-      font-weight: bold;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 360px;
+      padding: 32px 24px;
+      text-align: center;
+      background: #1f2933;
+      border-radius: 16px;
+    }
+
+    .logo {
+      width: 96px;
+      height: 96px;
       margin: 0 auto 20px;
+      border-radius: 20px;
+      background: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
+    .logo img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+    }
+
     h1 {
-      margin: 0 0 10px;
-      font-size: 26px;
+      margin: 0 0 8px;
+      font-size: 24px;
+      font-weight: 600;
     }
+
     p {
-      font-size: 15px;
+      margin: 0 0 28px;
+      font-size: 14px;
+      color: #9ca3af;
       line-height: 1.5;
-      margin-bottom: 25px;
-      color: #cbd5e1;
     }
-    .buttons {
+
+    .links {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 14px;
     }
-    .btn {
+
+    .link {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
       padding: 12px;
-      border-radius: 12px;
       text-decoration: none;
-      color: white;
-      font-size: 15px;
-      font-weight: 500;
+      color: #e5e7eb;
+      border: 1px solid #374151;
+      border-radius: 10px;
+      font-size: 14px;
     }
-    .google { background: #10b981; }
-    .apple { background: #3b82f6; }
+
+    .link img {
+      width: 20px;
+      height: 20px;
+      filter: brightness(0) invert(1);
+    }
+
+    .link:hover {
+      background: #111827;
+    }
   </style>
 </head>
+
 <body>
 
   <div class="card">
-    <div class="logo">MF</div>
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Fab3dMaker logo">
+    </div>
 
-    <h1>My Filaments</h1>
-    <p>Gestione smart dei filamenti 3D con tag NFC. Disponibile per Android e iOS.</p>
+    <h1>Fab3dMaker</h1>
+    <p>
+      
+    </p>
 
-    <div class="buttons">
-      <a class="btn google" href="https://play.google.com/store/apps/details?id=TUO_PACKAGE">Google Play</a>
-      <a class="btn apple" href="https://apps.apple.com/app/idTUO_ID">App Store</a>
+    <div class="links">
+      <a class="link" href="https://play.google.com/store/apps/details?id=com.fab3dmaker.mykeys">
+        <img src="assets/img/mykeys-android.svg" alt="">
+        <span>Google Play</span>
+      </a>
+      
+      <a class="link" href="https://play.google.com/store/apps/details?id=com.fab3dmaker.myfilaments">
+        <img src="assets/img/myfilaments-android.svg" alt="">
+        <span>Google Play</span>
+      </a>
+
+      <a class="link" href="https://apps.apple.com/it/app/my-filaments/id6758254736">
+        <img src="assets/img/myfilaments-appstore.svg" alt="">
+        <span>App Store</span>
+      </a>
     </div>
   </div>
 
